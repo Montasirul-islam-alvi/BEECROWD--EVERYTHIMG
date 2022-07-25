@@ -1,0 +1,12 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int x;
+    double y,averageconsumption;
+    scanf("%d %lf",&x,&y);
+    averageconsumption = x/y;
+    printf("%.3lf km/l\n",averageconsumption);
+    return 0;
+
+}
