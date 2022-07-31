@@ -1,0 +1,56 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int a,b,c,g1,g2,g3;
+    scanf("%d %d %d",&a,&b,&c);
+    if((a<b)&&(a<c))
+    {
+        g1 = a;
+        if(b<c)
+        {
+            g2 = b;
+            g3 = c;
+        }
+        else
+        {
+            g2 = c;
+            g3 = b;
+        }
+    }
+    if((b<a)&&(b<c))
+    {
+        g1 = b;
+        if(a<c)
+        {
+            g2 = a;
+            g3 = c;
+        }
+        else
+        {
+            g2 = c;
+            g3 = a;
+        }
+    }
+    if((c<a)&&(c<b))
+    {
+        g1 = c;
+        if(a<b)
+        {
+            g2 = a;
+            g3 = b;
+        }
+        else
+        {
+            g2 = b;
+            g3 = a;
+        }
+    }
+    printf("%d\n",g1);
+    printf("%d\n",g2);
+    printf("%d\n\n",g3);
+    printf("%d\n",a);
+    printf("%d\n",b);
+    printf("%d\n",c);
+    return 0;
+}
