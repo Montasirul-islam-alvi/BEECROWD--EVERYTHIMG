@@ -1,0 +1,36 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    double salary,tax,x,y,z;
+    scanf("%lf",&salary);
+
+    if(salary>0&&salary<=2000)
+    {
+        printf("Isento\n");
+    }
+    else if(salary>2000&&salary<=3000)
+    {
+        salary = salary-2000;
+        tax = (salary*8)/100.0;
+        printf("R$ %.2lf\n",tax);
+    }
+    else if(salary>3000&&salary<=4500)
+    {
+        salary = salary-2000;
+        x = (1000*8)/100.00;
+        y = ((salary-1000)*18)/100.0;
+        tax = x+y;
+        printf("R$ %.2lf\n",tax);
+    }
+    else if(salary>4500)
+    {
+        salary = salary -2000;
+        x = (1000*8)/100.0;
+        y = (1500*18)/100.0;
+        z = ((salary-2500)*28)/100.0;
+        tax = x+y+z;
+        printf("R$ %.2lf\n",tax);
+    }
+    return 0;
+}
