@@ -1,0 +1,14 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int n,i=1,x;
+    scanf("%d",&n);
+    while(i<=10)
+    {
+        x = i*n;
+        printf("%d x %d = %d\n",i,n,x);
+        i++;
+    }
+    return 0;
+}
