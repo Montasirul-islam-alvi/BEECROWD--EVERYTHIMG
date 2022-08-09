@@ -1,0 +1,16 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int n,i=1;
+    double a,b,c,avrg;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        scanf("%lf %lf %lf",&a,&b,&c);
+        avrg = ((a*2)+(b*3)+(c*5))/(2.0+3.0+5.0);
+        printf("%.1lf\n",avrg);
+        i++;
+    }
+    return 0;
+}
