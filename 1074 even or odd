@@ -1,0 +1,33 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int n,i=1,x;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        scanf("%d",&x);
+        if(x%2!=0&&x<0)
+        {
+            printf("ODD NEGATIVE\n");
+        }
+        if(x==0)
+        {
+            printf("NULL\n");
+        }
+        if(x%2!=0&&x>0)
+        {
+            printf("ODD POSITIVE\n");
+        }
+        if(x%2==0&&x<0)
+        {
+            printf("EVEN NEGATIVE\n");
+        }
+        if(x%2==0&&x>0)
+        {
+            printf("EVEN POSITIVE\n");
+        }
+        i++;
+    }
+    return 0;
+}
