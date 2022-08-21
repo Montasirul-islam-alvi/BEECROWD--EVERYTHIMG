@@ -1,0 +1,31 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int x,i,sum,f;
+    while(1)
+    {
+        scanf("%d",&x);
+    if(x == 0)
+    {
+        break;
+    }
+    f = 0;
+    if(x%2!=0)
+    {
+       f = 1;
+    }
+    if(f==1)
+    {
+         x = x+1;
+    }
+    sum = 0;
+    for(i=1;i<=5;i++)
+    {
+        sum+=x;
+        x+=2;
+    }
+    printf("%d\n",sum);
+    }
+    return 0;
+}
