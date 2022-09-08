@@ -1,0 +1,38 @@
+# BEECROWD--EVERYTHIMG
+#include<stdio.h>
+int main()
+{
+    int n,x,i,sum = 0,countc = 0,countr = 0,counts = 0;
+    char ch;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d %c",&x,&ch);
+        sum += x;
+        if(ch == 67)
+        {
+            countc += x;
+        }
+        if(ch == 82)
+        {
+            countr += x;
+        }
+        if(ch == 83)
+        {
+            counts += x;
+        }
+    }
+    printf("Total: %d cobaias\n",sum);
+    printf("Total de coelhos: %d\n",countc);
+    printf("Total de ratos: %d\n",countr);
+    printf("Total de sapos: %d\n",counts);
+    double ceol = (double)(countc*100)/sum;
+    printf("Percentual de coelhos: %.2lf %%\n",ceol);
+
+    double rato = (double)(countr*100)/sum;
+    printf("Percentual de ratos: %.2lf %%\n",rato);
+
+    double sapo = (double)(counts*100)/sum;
+    printf("Percentual de sapos: %.2lf %%\n",sapo);
+    return 0;
+}
